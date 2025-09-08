@@ -4,7 +4,7 @@
 
 1. **User**: the person trying to maintain habits like journaling, and to understand their emotions. The user might usually struggle with their mental health.
 2. **Therapist**: psychologists, counselors, or therapists.
-3. **Family/Friends**: people close to the user, who are indirectly affected by the user’s mental health and consistency with self-care.
+3. **Family/friends**: people close to the user, who are indirectly affected by the user’s mental health and consistency with self-care.
 
 **Impact**
 
@@ -14,7 +14,7 @@ The user directly struggles with their mental health and with maintaining routin
 
 1. **Visitor**: the museum-goer using the app to log preferences and receive a curated set of exhibits tailored to their interests.
 2. **Museum (institutions or marketers)**: organizations that want visitors to enjoy their experience, spend more time, and return; they may also want to highlight certain exhibits or events through the app.
-3. **Friends/Followers**: people who see the visitor’s logged highlights, or more generally, other users on the app.
+3. **Friends/followers**: people who see the visitor’s logged highlights, or more generally, other users on the app.
 
 **Impact**
 
@@ -24,7 +24,7 @@ The visitor directly benefits from avoiding overwhelm and making the most of the
 
 1. **Reader**: the person using the app to read daily news.
 2. **News outlets/publishers**: content providers whose articles are aggregated; they care about how their work is surfaced, summarized, and whether readers click through.
-3. **Podcasters/Media Creators**: people whose work is recommended alongside articles.
+3. **Podcasters/media creators**: people whose work is recommended alongside articles.
 4. **Society at large**: communities that benefit when more people are consistently informed rather than disengaged due to overload.
 
 **Impact**

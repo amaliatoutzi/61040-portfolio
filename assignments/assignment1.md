@@ -12,6 +12,8 @@ My grandma has suffered from Parkinsons disease for the past 14 years and takes 
 
 [Stakeholders](stakeholders.md##Mental-health-routines)
 
+[Evidence](evidence.md##Mental-health-routines)
+
 
 
 ## 2. <u>Travel prep and exploration</u>
@@ -21,6 +23,8 @@ I really enjoy traveling, but I usually find the preparation and planning parts 
 [Potential problems](problems.md##Travel-prep-and-exploration)
 
 [Stakeholders](stakeholders.md##Museum-overwhelm)
+
+[Evidence](evidence.md##Museum-overwhelm)
 
 ## 3. Structured studying
 ### helping learners organize, connect, and review material more effectively.
@@ -44,6 +48,8 @@ I try to keep up with the news every day, usually through apps on my phone or sc
 [Potential problems](problems.md##Reading-the-news)
 
 [Stakeholders](stakeholders.md##Information-overload)
+
+[Evidence](evidence.md##Information-overload)
 
 ## 9. Subleasing and student housing
 ### simplifying the process of finding, offering, and managing short-term rentals.
