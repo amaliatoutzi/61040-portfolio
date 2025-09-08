@@ -1,6 +1,6 @@
 # Problems
 
-## Personal Healthcare Management
+## Personal healthcare management
 
 | Problem | Selected | Reason |
 |---------|----------|--------|
@@ -10,7 +10,7 @@
 
 ---
 
-## Travel Prep and Exploration
+## Travel prep and exploration
 
 | Problem | Selected | Reason |
 |---------|----------|--------|
@@ -20,7 +20,7 @@
 
 ---
 
-## Reading the News
+## Reading the news
 
 | Problem | Selected | Reason |
 |---------|----------|--------|
