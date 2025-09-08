@@ -13,6 +13,13 @@ Some fun facts about me:
 I volunteer as a judge at the World AI Competition for Youth. It is a great change for me to combine my interests in AI and Education. Here's a video of a recent talk I gave:
 [![Watch on YouTube](https://img.youtube.com/vi/BoUaOxtu6-U/0.jpg)](https://www.youtube.com/watch?v=BoUaOxtu6-U)
 
-
 # Table of Contents
-[Link to Assignment 1](assignments/assignment1.md)
+## Assignment 1
+- &nbsp;&nbsp;&nbsp;[Domains](assignments/assignment1.md)
+ - &nbsp;&nbsp;&nbsp;[Problems](assignments/problems.md)
+
+ - &nbsp;&nbsp;&nbsp;[Stakeholders](assignments/stakeholders.md)
+
+ - &nbsp;&nbsp;&nbsp;[Evidence](assignments/evidence.md)
+
+ - &nbsp;&nbsp;&nbsp;[Features](assignments/features.md)

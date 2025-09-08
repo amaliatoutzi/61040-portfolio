@@ -2,7 +2,7 @@
 # Project domains
 
 ## Overview
-This document outlines ten possible domains for exploration in my project. The bold domains are the ones I ended up choosing for further exploration.
+This document outlines ten possible domains for exploration in my project. The underlined domains are the ones I ended up choosing for further exploration.
 
 ## <u>1. Personal healthcare management</u>
 ### handling everyday health routines and medicines
