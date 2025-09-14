@@ -15,11 +15,21 @@ I volunteer as a judge at the World AI Competition for Youth. It is a great chan
 
 # Table of Contents
 ## Assignment 1
-- &nbsp;&nbsp;&nbsp;[Domains](assignments/assignment1.md)
- - &nbsp;&nbsp;&nbsp;[Problems](assignments/problems.md)
+- &nbsp;&nbsp;&nbsp;[Domains](assignments/assignment1/assignment1.md)
+ - &nbsp;&nbsp;&nbsp;[Problems](assignments/assignment1/problems.md)
 
- - &nbsp;&nbsp;&nbsp;[Stakeholders](assignments/stakeholders.md)
+ - &nbsp;&nbsp;&nbsp;[Stakeholders](assignments/assignment1/stakeholders.md)
 
- - &nbsp;&nbsp;&nbsp;[Evidence](assignments/evidence.md)
+ - &nbsp;&nbsp;&nbsp;[Evidence](assignments/assignment1/evidence.md)
 
- - &nbsp;&nbsp;&nbsp;[Features](assignments/features.md)
+ - &nbsp;&nbsp;&nbsp;[Features](assignments/assignment1/features.md)
+
+ ## Problem Set 1
+- &nbsp;&nbsp;&nbsp;[Problem Set 1 Main Page](problemsets/problemset1/problemset1.md)
+ - &nbsp;&nbsp;&nbsp;[Problem 1](problemsets/problemset1/problem1.md)
+
+ - &nbsp;&nbsp;&nbsp;[Problem 2](problemsets/problemset1/problem2.md)
+
+ - &nbsp;&nbsp;&nbsp;[Problem 3](problemsets/problemset1/problem3.md)
+
+ - &nbsp;&nbsp;&nbsp;[Problem 4](problemsets/problemset1/problem4.md)
