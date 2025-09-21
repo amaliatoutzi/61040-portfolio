@@ -105,8 +105,10 @@ then Ownership.deleteOwnership (shortUrl)
 - _Allowing users to choose their own short URLs:_
 
 this could be realized by:
-editing shortenUrl to: shortenUrl(targetUrl: String, shortUrlBase: String, optional suffix: String)
-editing the state of Request to:
+
+Editing shortenUrl to accept an optional suffix: shortenUrl(targetUrl: String, shortUrlBase: String, optional suffix: String)
+
+Editing the state of Request to:
 state
   a set of ShortenRequests with
     a targetUrl String
@@ -116,10 +118,15 @@ state
 Also, edit the syncs:
   sync register_desired
   when
-    Request.shortenUrl (targetUrl, shortUrlBase, desiredSuffix)
-  then UrlShortening.register (shortUrlSuffix: desiredSuffix, shortUrlBase, targetUrl)
+    Request.shortenUrl (targetUrl, shortUrlBase, suffix)
+  then UrlShortening.register (shortUrlSuffix: suffix, shortUrlBase, targetUrl)
 
-**Notes**: Basically, if suffix is provided, we bypass nonce generation and just call UrlShortening.register (here i named it register_desired for the sake of uniqueness) directly with that suffix. If suffix is not provided, use NonceGeneration.generate to create one, then call UrlShortening.register.
+Then we adjust the syncs:
+If a suffix is provided, call UrlShortening.register(shortUrlSuffix: suffix, shortUrlBase, targetUrl) directly (the register action already ensures uniqueness).
+
+If no suffix is provided, go with the usual path: call NonceGeneration.generate to produce one, then call UrlShortening.register.
+
+**Notes**: Essentially, user-supplied suffixes bypass nonce generation but still go through the same uniqueness check. If no suffix is supplied, the existing random generation flow is unchanged.
 
 - _Using the “word as nonce” strategy to generate more memorable short URLs:_
 We can edit the NonceGeneration concept as such:
@@ -131,26 +138,30 @@ state
     a dictionary set of Strings
 
 actions
-  generate (context: Context, dict: Dictionary): (nonce: String)
-    requires dict(context) exists and dict(context) is not empty
+
+  setDictionary(context: Context, words: set of Strings)
+    effects set dictionary(context) := words / used(context)
+
+  generateWord (context: Context): (nonce: String)
+    requires dictionary(context) exists and dictionary(context) is not empty
     effects choose some word that is in the dictionary of the context;
             remove that word from that dictionary of that context;
             add the word to used(context);
 ```
-**Notes**: in any place where we call _generate_ would also need to pass that dictionary in our case. So we would edit:
+Also:
 ```plaintext
-  sync generate
-  when Request.shortenUrl (shortUrlBase, dict)
-  then NonceGeneration.generate (context: shortUrlBase, dict: dict)
+  sync generateMemorable
+  when Request.shortenUrl (shortUrlBase)
+  then NonceGeneration.generateWord (context: shortUrlBase)
 
-
-  sync register
+  sync registerMemorable
   when
-    Request.shortenUrl (targetUrl, shortUrlBase, dict)
-    NonceGeneration.generate (context: shortUrlBase, dict: dict): (nonce)
+    Request.shortenUrl (targetUrl, shortUrlBase)
+    NonceGeneration.generateWord (): (nonce)
   then UrlShortening.register (shortUrlSuffix: nonce, shortUrlBase, targetUrl)
 ```
-And, we would also need to add a field in the request that takes in a dictionary when the request is made.
+
+**Notes**: with this approach, we keep both approaches (the dictionary one and the traditional random).
 
 - _Including the target URL in analytics, so that lookups of different short URLs can be grouped together when they refer to the same target URL:_
 
