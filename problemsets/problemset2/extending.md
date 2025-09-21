@@ -242,4 +242,4 @@ getAnalyticsPublic (shortUrl: String): (count: Number, total: Number)
              and key.active = true
     effects none
   ```
-  In general, this approach is very similar to PATs ([See here:](problemsets/problemset1/problem3.md)). It just requires no registration.
+  In general, this approach is very similar to PATs ([see here](../problemset1/problem3.md)). It just requires no registration.
