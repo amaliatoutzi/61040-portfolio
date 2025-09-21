@@ -9,13 +9,12 @@ In an implementation, we could maintain a counter for each context and then incr
 
 In a real implementation, we could have the counter and an encoding function (call it E) that maps a number (call it N) to a string (i.e, that could be digits from 0-9 to letters A-I in the alphabet). And then, every time we use _generate_ it would return E(N), increasing N afterwards. That E(N) would be the nonce.
 
-Then, the AF would be given by:
-\[
-\AF(counter) = \{\, E(n) \mid 0 \leq n < counter \,\}
-\]
+Then, the AF would be given by: **AF(counter) = {E(n) 0 ≤ n < counter}**
+
 
 ## 3. Words as nonces
 
 - _Advantage:_ Using common dictionary words makes the shortened URLs easier for the user to read them, remember them, type them, and share them.
 - _Disadvantage_: On the other hand, because these words are easier to remember/guess, people could just guess the generated URLs, and access websites they were not meant to. This would cause security issues for users who might want their website to be organization-specific for example. This can be fixed by making it password-protected, but this adds an additional layer of complexity that could be avoided with a randomly generated string.
-- Regardless, to realize this idea, we would need to modify the _NonceGeneration_ concept so that _generate_ gets words from a dictionary rather than just randomly generating strings. We would need some sort of database, or array, to store all those dictonary words and then randomly index in the data structure to obtain one or more of them. In the state, we would need to have the set of available words per context, and the effect of _generate_ action would remove the word(s) that were selected from the set of dictionary words, and add it to the used set. THe purpose would also be changed to "generate unique memorable strings within a context."
+
+Regardless, to realize this idea, we would need to modify the _NonceGeneration_ concept so that _generate_ gets words from a dictionary rather than just randomly generating strings. We would need some sort of database, or array, to store all those dictonary words and then randomly index in the data structure to obtain one or more of them. In the state, we would need to have the set of available words per context, and the effect of _generate_ action would remove the word(s) that were selected from the set of dictionary words, and add it to the used set. THe purpose would also be changed to "generate unique memorable strings within a context."
