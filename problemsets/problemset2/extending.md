@@ -119,7 +119,7 @@ Also, edit the syncs:
     Request.shortenUrl (targetUrl, shortUrlBase, desiredSuffix)
   then UrlShortening.register (shortUrlSuffix: desiredSuffix, shortUrlBase, targetUrl)
 
-**Notes**: Basically, if suffix is provided, we bypass nonce generation and just call UrlShortening.register (here i named it register_desired for the sake of uniqueness) directly with that suffix. If suffix is not provided, use NonceGeneration.generate (or SecureNonceGeneration) to create one, then call UrlShortening.register.
+**Notes**: Basically, if suffix is provided, we bypass nonce generation and just call UrlShortening.register (here i named it register_desired for the sake of uniqueness) directly with that suffix. If suffix is not provided, use NonceGeneration.generate to create one, then call UrlShortening.register.
 
 - _Using the “word as nonce” strategy to generate more memorable short URLs:_
 We can edit the NonceGeneration concept as such:
