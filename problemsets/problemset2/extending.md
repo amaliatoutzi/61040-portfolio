@@ -217,7 +217,7 @@ then
 
 sync viewAnalytics
 when Request.getAnalytics (shortUrl, requester)
-then ViewCounts.getAnalytics (requester, shortUrl): (count, total)
+then ViewCounts.getCount (requester, shortUrl): (count, total)
 ```
 
 **Notes:** a number of changes need ot be made here. I only included the actions/sync/details that needed to be changed. Anyhting not present here means it remains the same.
