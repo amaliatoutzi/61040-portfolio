@@ -33,3 +33,11 @@ I volunteer as a judge at the World AI Competition for Youth. It is a great chan
  - &nbsp;&nbsp;&nbsp;[Problem 3](problemsets/problemset1/problem3.md)
 
  - &nbsp;&nbsp;&nbsp;[Problem 4](problemsets/problemset1/problem4.md)
+
+  ## Problem Set 2
+- &nbsp;&nbsp;&nbsp;[Problem Set 2 Main Page](problemsets/problemset2/problemset2.md)
+ - &nbsp;&nbsp;&nbsp;[Concept questions](problemsets/problemset2/concept.md)
+
+ - &nbsp;&nbsp;&nbsp;[Synchronization questions](problemsets/problemset2/synchronization.md)
+
+ - &nbsp;&nbsp;&nbsp;[Extending the design](problemsets/problemset2/extending.md)
