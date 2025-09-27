@@ -24,6 +24,17 @@ I volunteer as a judge at the World AI Competition for Youth. It is a great chan
 
  - &nbsp;&nbsp;&nbsp;[Features](assignments/assignment1/features.md)
 
+## Assignment 2
+ - &nbsp;&nbsp;&nbsp;[Problem statement](problemstatement.md)
+
+ - &nbsp;&nbsp;&nbsp;[Application pitch](apppitch.md)
+
+ - &nbsp;&nbsp;&nbsp;[Concept design](conceptdesign.md)
+
+ - &nbsp;&nbsp;&nbsp;[UI sketches](UIsketches.md)
+
+ - &nbsp;&nbsp;&nbsp;[User journey](userjourney.md)
+
  ## Problem Set 1
 - &nbsp;&nbsp;&nbsp;[Problem Set 1 Main Page](problemsets/problemset1/problemset1.md)
  - &nbsp;&nbsp;&nbsp;[Problem 1](problemsets/problemset1/problem1.md)
