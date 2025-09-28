@@ -65,7 +65,7 @@ deleteLog(log: Logs, user: User)
 
 ```plaintext
 purpose
-maintain a user’s public identity, favorites, and preset taste tags to power recommendations and social features
+maintain a user’s identity, visibility, credentials, favorites, and preset taste tags to power recommendations and social features
 
 principle
 users must make a profile to use the app; it acts as authentication but also identification; as users complete their profile (handle, bio, favorites, preset tags), their identity and tastes become visible to friends and usable by the recommendation system. Following links determine whose shared logs are viewable by other users; if a profile is PRIVATE, only followers can see that user’s logs.

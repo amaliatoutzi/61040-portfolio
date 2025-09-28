@@ -1,9 +1,5 @@
 # UI sketches
 
-## Showcase
-
-![Showcase page](../../assets/showcase.png)
-
 ## Spotlight
 
 ![Spotlight page](../../assets/spotlight.png)
@@ -11,6 +7,10 @@
 ## Browse
 
 ![Browse page](../../assets/browse.png)
+
+## Showcase
+
+![Showcase page](../../assets/showcase.png)
 
 ## Profile
 
