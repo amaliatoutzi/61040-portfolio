@@ -68,7 +68,7 @@ purpose
 maintain a user’s public identity, favorites, and preset taste tags to power recommendations and social features
 
 principle
-users must make a profile to use the app; it acts as authentication but also identification; as users complete their profile (handle, bio, favorites, preset tags), their identity and tastes become visible to friends and usable by the recommendation system. Following links determine whose shared logs appear in a user’s feed; if a profile is PRIVATE, only followers can see that user’s feed.
+users must make a profile to use the app; it acts as authentication but also identification; as users complete their profile (handle, bio, favorites, preset tags), their identity and tastes become visible to friends and usable by the recommendation system. Following links determine whose shared logs are viewable by other users; if a profile is PRIVATE, only followers can see that user’s logs.
 
 state
 a set of Profiles with
@@ -286,7 +286,7 @@ sync forcePrivateIfProfilePrivate
     where Profile: profile(owner).visibility = PRIVATE
     then MuseumVisit.createLog (owner, museum, PRIVATE)
 
-sync tagFeedsSpotlight
+sync tagSpotlight
     when MuseumVisit.setMuseumTag (log, tag, user)
     where tag in {LOVE, LIKE, MEH}
     then Spotlight.recordMuseumTaste (user, MuseumVisit:Logs[log].museum, tag)
@@ -315,8 +315,6 @@ sync requireProfileForVisit
 ```
 
 ## Notes
-
-I have design 5 concepts:
 1. Profile [User, Museum, Exhibit, Tag] is the identity and access layer. A user must have a Profile to use the app. Profile carries visibility (PUBLIC/PRIVATE), favorites, and preset taste tags, and defines follow relationships. Profile visibility governs who may view a user’s public artifacts (e.g., visits surfaced elsewhere). Authentication is simplified by storing username/password inside Profile; no other concept stores credentials.
 
 2. MuseumRegistry [Museum, Exhibit] is the source of truth for museums and exhibits. Registration requires an out-of-band inviteCod (so for example, an email is sent to museums inviting them to join the app); subsequent edits require the museum’s adminKey. This acts as authorization for catalog management only (it does not grant user-level privileges). Registry also controls exhibit visibility (PUBLIC/HIDDEN), which downstream concepts respect.
